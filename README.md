@@ -18,6 +18,13 @@
 -initialize a node project with `npm init -y`
 -install express and morgan`npm i express morgan, `
 
+### Add `node_modules`to`gitignore`
+
+.gitignore
+```bash
+node_modules
+```
+
 ### Write Server Boilerplate 
 server.js
 ```js
