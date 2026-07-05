@@ -33,4 +33,6 @@ console.log('Listening on port 3000');
 ```
 Run the serves with `nodemon serves.js`
 <img width="371" height="151" alt="image" src="https://github.com/user-attachments/assets/a2689433-175d-4972-909c-72f95e6e6193" />
-
+ Navigate to `http://localhost:3000`to view our server.
+ Use `Ctrl + c`to stope the serves in the terminal.
+ 
