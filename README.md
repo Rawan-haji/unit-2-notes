@@ -33,6 +33,28 @@ console.log('Listening on port 3000');
 ```
 Run the serves with `nodemon serves.js`
 <img width="371" height="151" alt="image" src="https://github.com/user-attachments/assets/a2689433-175d-4972-909c-72f95e6e6193" />
+
+
  Navigate to `http://localhost:3000`to view our server.
  Use `Ctrl + c`to stope the serves in the terminal.
- 
+
+
+ ```js
+app.get('/test',function(ress,reqq){
+    ress.send('<h1>this is test</h1>')
+
+})
+ ```
+
+### Using request parameters
+```js
+app.get('/greet/:name', function(req, res){
+    res.send(`hello ${req.params.name}`)
+    console.log(req.params.name)
+
+})
+```
+Navigate to
+`http:localhost:3000/2490`
+
+<img width="355" height="106" alt="image" src="https://github.com/user-attachments/assets/0e852f8a-7edf-4269-bb63-80b6990b5ac9" />
