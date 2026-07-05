@@ -16,15 +16,19 @@
 -create a directory
 -create server file `touch server.js`
 -initialize a node project with `npm init -y`
--install express `npm i express`
+-install express and morgan`npm i express morgan, `
 
 ### Write Server Boilerplate 
 server.js
 ```js
 //bring express into our serves
 const express=require('express')
+ const age =req.query.age
 //actually use express
 const app = express()
+
+
+app.use(morgan('dev'))
 
 app.listen(3000,function(){
 console.log('Listening on port 3000');
